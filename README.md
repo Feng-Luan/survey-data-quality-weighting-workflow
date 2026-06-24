@@ -82,6 +82,27 @@ The workflow applies iterative proportional fitting, also known as raking, to al
 
 Weights are trimmed at the 1st and 99th percentiles to reduce the impact of extreme weights.
 
+## Example Results
+
+### Quality Control Summary
+
+- Total responses: 912
+- Excluded responses: 37
+- Retention rate: 95.9%
+
+### Weighting Summary
+
+- Age, gender, and education distributions aligned to benchmark targets using iterative proportional fitting (raking).
+- Weights trimmed at the 1st and 99th percentiles.
+
+### Final Deliverables
+
+- Respondent-level quality flags
+- Cleaned survey dataset
+- Weighting diagnostics
+- Weighted survey estimates
+- Reproducible HTML report
+- 
 ## Notes
 
 The dataset is fully simulated and does not contain real respondent information.
