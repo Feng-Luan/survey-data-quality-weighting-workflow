@@ -102,7 +102,7 @@ Weights are trimmed at the 1st and 99th percentiles to reduce the impact of extr
 - Weighting diagnostics
 - Weighted survey estimates
 - Reproducible HTML report
-- 
+  
 ## Notes
 
 The dataset is fully simulated and does not contain real respondent information.
