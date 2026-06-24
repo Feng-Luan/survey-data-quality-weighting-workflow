@@ -1,0 +1,50 @@
+---
+title: "Survey Data Quality and Weighting Report"
+author: "Feng Luan"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+## Overview
+
+This report summarizes a reproducible survey data quality and weighting workflow using simulated respondent-level survey data.
+
+```{r load-data}
+quality_summary <- read.csv("../output/quality_control_summary.csv")
+weighted_estimates <- read.csv("../output/weighted_estimates.csv")
+weight_summary <- read.csv("../output/weight_summary.csv")
+weighting_diagnostics <- read.csv("../output/weighting_diagnostics.csv")
+```
+
+## Quality Control Summary
+
+```{r quality-summary}
+quality_summary
+```
+
+## Weight Summary
+
+```{r weight-summary}
+weight_summary
+```
+
+## Raking Diagnostics
+
+```{r raking-diagnostics}
+tail(weighting_diagnostics, 10)
+```
+
+## Weighted and Unweighted Estimates
+
+```{r weighted-estimates}
+weighted_estimates
+```
+
+## Interpretation
+
+The workflow first identifies potentially low-quality responses using respondent-level quality flags. After excluding respondents with multiple quality concerns, the cleaned survey sample is weighted using raking so that the sample better aligns with external benchmark distributions.
+
+The final output compares unweighted and weighted estimates for each survey item.
