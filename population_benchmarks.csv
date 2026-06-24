@@ -1,0 +1,12 @@
+"variable","category","population_prop"
+"age_group","18-29",0.22
+"age_group","30-44",0.27
+"age_group","45-64",0.32
+"age_group","65+",0.19
+"gender","Female",0.51
+"gender","Male",0.48
+"gender","Other",0.01
+"education","High school or less",0.32
+"education","Some college",0.28
+"education","Bachelor's",0.24
+"education","Graduate",0.16
